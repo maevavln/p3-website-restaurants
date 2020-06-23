@@ -1,0 +1,17 @@
+@mixin flexMid {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.menu {
+    width: 100%;
+    height: 200px;
+    background: #579c87
+   }
+
+   .logo {
+    @include flexMid;
+   }
+
+   
