@@ -4,14 +4,48 @@
     align-items: center;   
 }
 
-.menu {
+h1 {
+    @include flexMid;
+    font-size: 30px;
+}
+
+h2 {
+    @include flexMid;
+    font-size: 30px;
+}
+
+.header {
     width: 100%;
     height: 200px;
-    background: #579c87
+    background: #579c87;
+
+    .logo {
+        @include flexMid;
+       } 
+
    }
 
-   .logo {
-    @include flexMid;
-   }
+   .container 
+    {
+        width: 100%;
+        height: 758px;
+        display: flex;
+    
+        .menu-note-enchantee {
+            background: #fcdfdb
+        }
 
+        .menu-chic-francaise {
+            background: #fff5fe
+        }
+
+        .menu-delice-papilles {
+            background: #f9f9f9
+        }
+
+        .menu-palette-gout {
+            background: #fdfffd
+        }
+
+    }
    
