@@ -4,14 +4,148 @@
     align-items: center;   
 }
 
+@mixin rectangle-menu {
+    display: flex;
+    justify-content: space-around; 
+}
+
+/// mise en forme du texte - fonts
+
+@font-face {
+    font-family: 'truenosemibold';
+    src: url('base/fonts/truenosbd-webfont.woff2') format('woff2'),
+         url('bases/fonts/truenosbd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'flow_extbold';
+    src: url('base/fonts/flow_b-webfont.woff2') format('woff2'),
+         url('base/fonts/flow_b-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'caveatbold';
+    src: url('base/fonts/caveat-bold-webfont.woff2') format('woff2'),
+         url('base/fonts/caveat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'caveatregular';
+    src: url('base/fonts/caveat-regular-webfont.woff2') format('woff2'),
+         url('base/fonts/caveat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('base/fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('base/fonts/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'devonshireregular';
+    src: url('base/fonts/devonshire-regular-webfont.woff2') format('woff2'),
+         url('base/fonts/devonshire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'vidaloka_regular';
+    src: url('base/fonts/vidaloka-regular-webfont.woff2') format('woff2'),
+         url('base/fonts/vidaloka-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dancing_scriptregular';
+    src: url('base/fonts/dancingscript-variablefont-webfont.woff2') format('woff2'),
+         url('base/fonts/dancingscript-variablefont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/// mise en page texte 
+
 h1 {
-    @include flexMid;
-    font-size: 30px;
+    font-size: 60px;
 }
 
 h2 {
-    @include flexMid;
+    font-size: 40px;
+
+        .style-titre-enchantee {
+            font-family: 'devonshireregular';
+        }
+
+        .style-titre-chic {
+            font-family: 'vidaloka_regular';
+        }
+
+        .style-titre-delice {
+            font-family: 'dancing_scriptregular';
+        }
+
+        .style-palette-gout {
+            font-family: 'kaushan_scriptregular';
+        }
+    }
+
+h3{
     font-size: 30px;
+
+    .titre-menu-enchante{
+        font-family: 'flow_extbold';
+    }
+
+    .titre-menu-chic {
+        font-family: 'vidaloka_regular';
+    }
+
+    .titre-menu-delice {
+        font-family: 'caveatbold';
+    }
+    
 }
 
 .header {
@@ -23,29 +157,76 @@ h2 {
         @include flexMid;
        } 
 
-   }
+ }
 
-   .container 
-    {
-        width: 100%;
-        height: 758px;
+.container {
         display: flex;
-    
-        .menu-note-enchantee {
-            background: #fcdfdb
-        }
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
 
-        .menu-chic-francaise {
-            background: #fff5fe
-        }
-
-        .menu-delice-papilles {
-            background: #f9f9f9
-        }
-
-        .menu-palette-gout {
-            background: #fdfffd
-        }
-
+    .menu{
+            @include flexMid;
+            width: 40%;
+            height: 700px;
+            flex-direction: column;
     }
+    
+    .menu-note-enchantee {
+        background: #fcdfdb
+    }
+
+    .menu-chic-francaise {
+        background: #fff5fe
+    }
+
+    .menu-delice-papilles {
+        background: #f9f9f9
+    }
+
+    .menu-palette-gout {
+        background: #fdfffd
+    }
+
+}
+
+.styled {
+    width: 10%;
+    display: block;
+    margin: auto;
+    border: 0;
+    line-height: 3;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #579c87;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        
+        .styled:hover {
+            background-color: rgba(255, 0, 0, 1);
+        }
+        
+        .styled:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                        inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background: #579c87;
+
+    .footer-text{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
    

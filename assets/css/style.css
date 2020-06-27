@@ -1,15 +1,82 @@
+@font-face {
+  font-family: "truenosemibold";
+  src: url("base/fonts/truenosbd-webfont.woff2") format("woff2"), url("bases/fonts/truenosbd-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "flow_extbold";
+  src: url("base/fonts/flow_b-webfont.woff2") format("woff2"), url("base/fonts/flow_b-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "caveatbold";
+  src: url("base/fonts/caveat-bold-webfont.woff2") format("woff2"), url("base/fonts/caveat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "caveatregular";
+  src: url("base/fonts/caveat-regular-webfont.woff2") format("woff2"), url("base/fonts/caveat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kaushan_scriptregular";
+  src: url("base/fonts/kaushanscript-regular-webfont.woff2") format("woff2"), url("base/fonts/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "devonshireregular";
+  src: url("base/fonts/devonshire-regular-webfont.woff2") format("woff2"), url("base/fonts/devonshire-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "vidaloka_regular";
+  src: url("base/fonts/vidaloka-regular-webfont.woff2") format("woff2"), url("base/fonts/vidaloka-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dancing_scriptregular";
+  src: url("base/fonts/dancingscript-variablefont-webfont.woff2") format("woff2"), url("base/fonts/dancingscript-variablefont-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
+  font-size: 60px;
 }
 
 h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 40px;
+}
+h2 .style-titre-enchantee {
+  font-family: "devonshireregular";
+}
+h2 .style-titre-chic {
+  font-family: "vidaloka_regular";
+}
+h2 .style-titre-delice {
+  font-family: "dancing_scriptregular";
+}
+h2 .style-palette-gout {
+  font-family: "kaushan_scriptregular";
+}
+
+h3 {
   font-size: 30px;
+}
+h3 .titre-menu-enchante {
+  font-family: "flow_extbold";
+}
+h3 .titre-menu-chic {
+  font-family: "vidaloka_regular";
+}
+h3 .titre-menu-delice {
+  font-family: "caveatbold";
 }
 
 .header {
@@ -24,9 +91,17 @@ h2 {
 }
 
 .container {
-  width: 100%;
-  height: 758px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 700px;
+  flex-direction: column;
 }
 .container .menu-note-enchantee {
   background: #fcdfdb;
@@ -39,6 +114,40 @@ h2 {
 }
 .container .menu-palette-gout {
   background: #fdfffd;
+}
+
+.styled {
+  width: 10%;
+  display: block;
+  margin: auto;
+  border: 0;
+  line-height: 3;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #579c87;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+.styled .styled:hover {
+  background-color: red;
+}
+.styled .styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 200px;
+  background: #579c87;
+}
+.footer .footer-text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
