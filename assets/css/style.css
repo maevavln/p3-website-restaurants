@@ -47,7 +47,10 @@
   font-style: normal;
 }
 h1 {
-  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  letter-spacing: -5px;
+  color: #fdcb46;
 }
 
 h2 {
@@ -80,6 +83,9 @@ h3 .titre-menu-delice {
 }
 
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 200px;
   background: #579c87;
@@ -93,6 +99,8 @@ h3 .titre-menu-delice {
 .container {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
   justify-content: space-around;
 }
 .container .menu {
@@ -117,9 +125,12 @@ h3 .titre-menu-delice {
 }
 
 .styled {
-  width: 10%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   margin: auto;
+  width: 10%;
   border: 0;
   line-height: 3;
   font-size: 1rem;
@@ -146,8 +157,14 @@ h3 .titre-menu-delice {
 }
 .footer .footer-text {
   display: flex;
+  justify-content: space-between;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: bold;
   width: 100%;
-  flex-direction: column;
+  color: #fdcb46;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
