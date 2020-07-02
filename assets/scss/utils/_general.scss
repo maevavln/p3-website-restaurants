@@ -1,0 +1,114 @@
+/// Body
+
+.Body{
+    font-size: 20px;
+}
+
+
+/// mise forme texte 
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    letter-spacing: -0.1em;
+    color: $yellow;
+}
+
+h2 {
+    font-size: 2.5em;
+    }
+
+.style-titre-enchantee {
+    font-family: 'devonshireregular';
+}
+
+.style-titre-chic {
+    font-family: 'helpusgiambattistaregular';
+}
+
+.style-titre-delice {
+    font-family: 'dancing_scriptregular';
+}
+
+.style-palette-gout {
+    font-family: 'kaushan_scriptregular';
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.titre-menu-enchante{
+    font-family: 'flow_extbold';
+}
+
+.titre-menu-chic {
+    font-family: 'vidaloka_regular';
+}
+
+.titre-menu-delice {
+    font-family: 'caveatbold';
+}
+
+.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: space-around;
+        
+
+    .menu{
+        @include flexMid;
+        width: 40%;
+        height: 700px;
+        box-shadow: 0 0 0.5em grey;
+        flex-direction: column;
+        margin: 40px;
+    }
+    
+    .menu-note-enchantee {
+        background: #fcdfdb
+    }
+
+    .menu-chic-francaise {
+        background: #fff5fe
+    }
+
+    .menu-delice-papilles {
+        background: #f9f9f9
+    }
+
+    .menu-palette-gout {
+        background: #fdfffd
+    }
+
+}
+
+/// button
+
+
+.prochainement-container{
+    @include flexMid;
+
+    .button-styled {
+        @include flexMid;
+        justify-content: space-around;
+        margin: 40px;
+        width: auto;
+        border: 0;
+        line-height: 1;
+        padding: 10px 20px;
+        font-size: 2em;
+        text-align: center;
+        color: $yellow;
+        text-shadow: 0.05px 0.05px 0.05px #000;
+        border-radius: 10px;
+        background-color: $green;
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6);
+            
+        .styled:hover {
+            background-color: $yellow;
+        }
+            
+    }
+}

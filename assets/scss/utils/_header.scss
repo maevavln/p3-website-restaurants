@@ -1,0 +1,8 @@
+///header
+
+.header {
+    @include flexMid;
+    width: 100%;
+    height: 200px;
+    background: $green;
+ }

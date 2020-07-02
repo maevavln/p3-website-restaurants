@@ -1,0 +1,23 @@
+///footer 
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background: $green;
+
+    .footer-text {
+        display: flex;
+        justify-content: space-between;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: bold;
+        width: 100%;
+        color: $yellow;
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+   
