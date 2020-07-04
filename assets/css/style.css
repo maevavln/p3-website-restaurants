@@ -61,8 +61,15 @@
   background: #579c87;
 }
 
-.Body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-size: 20px;
+  width: 100%;
 }
 
 h1 {
@@ -73,7 +80,18 @@ h1 {
 }
 
 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .style-titre-enchantee {
@@ -90,10 +108,6 @@ h2 {
 
 .style-palette-gout {
   font-family: "kaushan_scriptregular";
-}
-
-h3 {
-  font-size: 2em;
 }
 
 .titre-menu-enchante {
@@ -125,16 +139,40 @@ h3 {
   margin: 40px;
 }
 .container .menu-note-enchantee {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 600ms;
   background: #fcdfdb;
 }
+.container .menu-note-enchantee:hover {
+  transform: scale(1.15);
+}
 .container .menu-chic-francaise {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 600ms;
   background: #fff5fe;
 }
+.container .menu-chic-francaise:hover {
+  transform: scale(1.15);
+}
 .container .menu-delice-papilles {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 600ms;
   background: #f9f9f9;
 }
+.container .menu-delice-papilles:hover {
+  transform: scale(1.15);
+}
 .container .menu-palette-gout {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 600ms;
   background: #fdfffd;
+}
+.container .menu-palette-gout:hover {
+  transform: scale(1.15);
 }
 
 .prochainement-container {
@@ -159,6 +197,7 @@ h3 {
   border-radius: 10px;
   background-color: #579c87;
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .prochainement-container .button-styled .styled:hover {
   background-color: #fdcb46;
@@ -166,7 +205,6 @@ h3 {
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   height: 200px;
   background: #579c87;
@@ -181,6 +219,22 @@ h3 {
   font-size: 1em;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.details-menu-note-echantee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcdfdb;
+  width: 60%;
+  height: 700px;
+  box-shadow: 0 0 0.5em grey;
+}
+
+.svg-music {
+  width: 50px;
+  height: 50px;
+  background: -webkit-linear-gradient(pink, orange);
 }
 
 /*# sourceMappingURL=style.css.map */

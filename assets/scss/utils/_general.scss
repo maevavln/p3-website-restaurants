@@ -1,9 +1,14 @@
 /// Body
 
-.Body{
-    font-size: 20px;
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
 }
 
+body{
+    font-size: 20px;
+    width: 100%;
+}
 
 /// mise forme texte 
 
@@ -15,8 +20,17 @@ h1 {
 }
 
 h2 {
+    @include flexMid;
     font-size: 2.5em;
     }
+
+h3 {
+    font-size: 2em;
+}
+
+a:link {
+    text-decoration: none;
+}
 
 .style-titre-enchantee {
     font-family: 'devonshireregular';
@@ -32,10 +46,6 @@ h2 {
 
 .style-palette-gout {
     font-family: 'kaushan_scriptregular';
-}
-
-h3 {
-    font-size: 2em;
 }
 
 .titre-menu-enchante{
@@ -67,19 +77,23 @@ h3 {
     }
     
     .menu-note-enchantee {
-        background: #fcdfdb
+        @include restau-animation;
+        background: #fcdfdb;
     }
 
     .menu-chic-francaise {
-        background: #fff5fe
+        @include restau-animation;
+        background: #fff5fe;
     }
 
     .menu-delice-papilles {
-        background: #f9f9f9
+        @include restau-animation;
+        background: #f9f9f9;
     }
 
     .menu-palette-gout {
-        background: #fdfffd
+        @include restau-animation;
+        background: #fdfffd;
     }
 
 }
@@ -105,6 +119,7 @@ h3 {
         border-radius: 10px;
         background-color: $green;
         box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6);
+        text-decoration: none;
             
         .styled:hover {
             background-color: $yellow;
