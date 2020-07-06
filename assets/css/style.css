@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/**
+ font-family: 'helpusgiambattistaregular';
+ */
 @font-face {
   font-family: "helpusgiambattistaregular";
   src: url("../fonts/helpusgiambattista-webfont.woff2") format("woff2"), url("../fonts/helpusgiambattista-webfont.woff") format("woff");
@@ -61,14 +65,9 @@
   background: #579c87;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 }
 
@@ -90,8 +89,19 @@ h3 {
   font-size: 2em;
 }
 
-a:link {
+h4 {
+  font-size: 1.5em;
+}
+
+a {
   text-decoration: none;
+}
+
+.icone-music {
+  font-size: 2em;
+  background: -webkit-gradient(linear, left bottom, right top, from(#f04a5e), to(#f78f6a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .style-titre-enchantee {
@@ -179,6 +189,7 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 .prochainement-container .button-styled {
   display: flex;
@@ -190,51 +201,64 @@ a:link {
   border: 0;
   line-height: 1;
   padding: 10px 20px;
-  font-size: 2em;
+  font-size: 1.6em;
   text-align: center;
   color: #fdcb46;
   text-shadow: 0.05px 0.05px 0.05px #000;
   border-radius: 10px;
   background-color: #579c87;
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
-  text-decoration: none;
 }
 .prochainement-container .button-styled .styled:hover {
   background-color: #fdcb46;
 }
 
+/* Page 1 : details du menu enchanté
+*/
+.container-details-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.container-details-menu .details-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 700px;
+  margin: 0;
+  box-shadow: 0 0 0.5em grey;
+}
+.container-details-menu .list-menu-note-echantee {
+  background: #fcdfdb;
+}
+
+.titre-plat {
+  display: inline-flex;
+}
+
 .footer {
   display: flex;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 50px;
   background: #579c87;
 }
 .footer .footer-text {
   display: flex;
   justify-content: space-between;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-style: bold;
   width: 100%;
-  color: #fdcb46;
-  font-size: 1em;
   padding-left: 20px;
   padding-right: 20px;
 }
-
-.details-menu-note-echantee {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fcdfdb;
-  width: 60%;
-  height: 700px;
-  box-shadow: 0 0 0.5em grey;
-}
-
-.svg-music {
-  width: 50px;
-  height: 50px;
-  background: -webkit-linear-gradient(pink, orange);
+.footer .style-text-footer {
+  font-style: bold;
+  color: #fdcb46;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
