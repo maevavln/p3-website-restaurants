@@ -1,0 +1,100 @@
+/* Page 1 : general 
+*/
+
+.container-details-menu{
+    @include flexMid;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    .details-menu {
+        width: 60%;
+        height: 100%;
+        margin: 0;
+        box-shadow: 0 0 0.5em grey;
+    }
+}
+
+.background-menu-enchantee {
+    background: #fcdfdb;
+}
+
+/* nom du restau - titre de la carte */
+
+.titre-carte{
+    font-size: 1.5em;
+}
+
+.icone-titre{
+    font-size: 2em;
+    padding-top: 30px;
+}
+
+ /*  details des menus de la carte  */ 
+
+.grid-menu {
+    @include grid-card;
+    grid-template-columns: 80% 20%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.grid-tittle {
+    @include flexMid;
+    @include grid-card;
+    text-align: center;
+    grid-template-columns: 40% 20% 40%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.grid-menu-dessert {
+    @include grid-card;
+    grid-template-columns: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.style-trait-menu-enchanté {
+    fill: $brown;
+}
+
+.titre-carte{
+    @include flexMid;
+    flex-direction: column;
+}
+
+.titre-carte-note-enchante{ 
+    font-family: 'devonshireregular';
+    color: $brown; 
+    font-size: 2em;
+}
+
+.entree-plat-dessert-la-note{
+    fill: $brown;
+}
+
+.tarifs-plats{
+    @include tarifs;
+    font-family: 'flow_extbold';
+}
+
+.dishes-names{
+    @include dishes;
+    font-family: 'caveatregular';
+}
+
+.end-carte {
+    padding-bottom: 50px;
+}
+
+/* fin de la carte */
+
+.icone-music-end{
+    font-size: 1.5em;
+    padding-right: 20px;
+}
+
+.end-note-enchante {
+    @include flexMid;
+}
+

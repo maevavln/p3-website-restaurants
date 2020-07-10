@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /**
- font-family: 'helpusgiambattistaregular';
+ font-family: 'helpusgiambattistaregular'; 
+ font-family: 'flow_extbold'; pour le menu de la note enchantee et les titre des plats de la carte de la note
+ font-family: 'flow_extregular'; pour les plats de la carte de la note enchantee 
  */
 @font-face {
   font-family: "helpusgiambattistaregular";
@@ -17,6 +19,12 @@
 @font-face {
   font-family: "flow_extbold";
   src: url("../fonts/flow_b-webfont.woff2") format("woff2"), url("../fonts/flow_b-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "flow_extregular";
+  src: url("flow-ext.regular-webfont.woff2") format("woff2"), url("flow-ext.regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -69,6 +77,7 @@ body {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -106,6 +115,7 @@ a {
 
 .style-titre-enchantee {
   font-family: "devonshireregular";
+  color: #3d1319;
 }
 
 .style-titre-chic {
@@ -122,6 +132,7 @@ a {
 
 .titre-menu-enchante {
   font-family: "flow_extbold";
+  color: #3d1319;
 }
 
 .titre-menu-chic {
@@ -213,33 +224,6 @@ a {
   background-color: #fdcb46;
 }
 
-/* Page 1 : details du menu enchanté
-*/
-.container-details-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 100px;
-}
-.container-details-menu .details-menu {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 60%;
-  height: 700px;
-  margin: 0;
-  box-shadow: 0 0 0.5em grey;
-}
-.container-details-menu .list-menu-note-echantee {
-  background: #fcdfdb;
-}
-
-.titre-plat {
-  display: inline-flex;
-}
-
 .footer {
   display: flex;
   position: fixed;
@@ -259,6 +243,114 @@ a {
   font-style: bold;
   color: #fdcb46;
   font-size: 1em;
+}
+
+/* Page 1 : general 
+*/
+.container-details-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.container-details-menu .details-menu {
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  box-shadow: 0 0 0.5em grey;
+}
+
+.background-menu-enchantee {
+  background: #fcdfdb;
+}
+
+/* nom du restau - titre de la carte */
+.titre-carte {
+  font-size: 1.5em;
+}
+
+.icone-titre {
+  font-size: 2em;
+  padding-top: 30px;
+}
+
+/*  details des menus de la carte  */
+.grid-menu {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 80% 20%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.grid-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  flex-wrap: wrap;
+  text-align: center;
+  grid-template-columns: 40% 20% 40%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.grid-menu-dessert {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.style-trait-menu-enchanté {
+  fill: #3d1319;
+}
+
+.titre-carte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titre-carte-note-enchante {
+  font-family: "devonshireregular";
+  color: #3d1319;
+  font-size: 2em;
+}
+
+.entree-plat-dessert-la-note {
+  fill: #3d1319;
+}
+
+.tarifs-plats {
+  font-size: 1em;
+  text-align: right;
+  font-family: "flow_extbold";
+}
+
+.dishes-names {
+  font-size: 1.2em;
+  text-align: left;
+  font-family: "caveatregular";
+}
+
+.end-carte {
+  padding-bottom: 50px;
+}
+
+/* fin de la carte */
+.icone-music-end {
+  font-size: 1.5em;
+  padding-right: 20px;
+}
+
+.end-note-enchante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

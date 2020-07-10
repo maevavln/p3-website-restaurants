@@ -17,3 +17,18 @@
         transform: scale(1.15);
     }
 }
+
+@mixin tarifs {
+    font-size: 1em;
+    text-align: right;
+}
+
+@mixin dishes {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+@mixin grid-card {
+    display: grid;
+    flex-wrap: wrap;  
+}

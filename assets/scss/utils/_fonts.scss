@@ -1,7 +1,9 @@
 
 /// mise en forme du texte - fonts
 /**
- font-family: 'helpusgiambattistaregular';
+ font-family: 'helpusgiambattistaregular'; 
+ font-family: 'flow_extbold'; pour le menu de la note enchantee et les titre des plats de la carte de la note
+ font-family: 'flow_extregular'; pour les plats de la carte de la note enchantee 
  */
 
 @font-face {
@@ -27,6 +29,15 @@
     font-family: 'flow_extbold';
     src: url('../fonts/flow_b-webfont.woff2') format('woff2'),
          url('../fonts/flow_b-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flow_extregular';
+    src: url('flow-ext.regular-webfont.woff2') format('woff2'),
+         url('flow-ext.regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
