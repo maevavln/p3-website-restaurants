@@ -58,6 +58,14 @@
     fill: $brown;
 }
 
+.styles-line-chic-entrance {
+    fill: orange;
+
+    .right-line {
+        transform: scaleX(-1);
+    }
+}
+
 .titre-carte{
     @include flexMid;
     flex-direction: column;

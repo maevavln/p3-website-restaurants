@@ -308,6 +308,13 @@ a {
   fill: #3d1319;
 }
 
+.styles-line-chic-entrance {
+  fill: orange;
+}
+.styles-line-chic-entrance .right-line {
+  transform: scaleX(-1);
+}
+
 .titre-carte {
   display: flex;
   justify-content: center;
