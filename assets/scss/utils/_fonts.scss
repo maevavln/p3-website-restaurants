@@ -102,3 +102,21 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'Open Sans light';
+    src: url('OpenSans-Light.woff2') format('woff2'),
+        url('OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans regular';
+    src: url('OpenSans-Regular.woff2') format('woff2'),
+        url('OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

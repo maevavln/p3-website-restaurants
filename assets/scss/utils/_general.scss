@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 /// Body
 
 body{
@@ -49,13 +54,18 @@ a {
 
 .style-titre-chic {
     font-family: 'helpusgiambattistaregular';
+    background: -webkit-gradient(linear, left top, left bottom, from(#d8852e), to(#905bfd));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .style-titre-delice {
+    @include degradé-bleu;
     font-family: 'dancing_scriptregular';
 }
 
 .style-palette-gout {
+    @include degradé-vert;
     font-family: 'kaushan_scriptregular';
 }
 
@@ -70,6 +80,12 @@ a {
 
 .titre-menu-delice {
     font-family: 'caveatbold';
+    color: #0887fb;
+}
+
+.titre-menu-palette {
+    font-family: 'caveatbold';
+    color: #bfff7e;
 }
 
 .container {
