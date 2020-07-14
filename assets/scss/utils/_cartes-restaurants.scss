@@ -14,8 +14,14 @@
     }
 }
 
+/* Background cards */
+
 .background-menu-enchantee {
     background: #fcdfdb;
+}
+
+.background-menu-chic {
+    background: #fff5fe;
 }
 
 /* nom du restau - titre de la carte */
@@ -44,6 +50,8 @@
     grid-template-columns: 40% 20% 40%;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .card {
@@ -60,14 +68,6 @@
 
 .style-trait-menu-enchanté {
     fill: $brown;
-}
-
-.styles-line-chic-entrance {
-    fill: orange;
-
-    .right-line {
-        transform: scaleX(-1);
-    }
 }
 
 .titre-restau-carte {
@@ -107,8 +107,9 @@
     padding-bottom: 50px;
 }
 
-
-/* fin de la carte */
+.trait-menu-note {
+    fill: $brown;
+}
 
 .icone-music-end{
     font-size: 1.5em;
@@ -121,29 +122,64 @@
 }
 
 .style-titre-carte-chic {
-    font-family: 'helpusgiambattistaregular';
-
+    @include titre-chic;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
-.dishes-names-chic{
-    @include dishes;
-    font-family: 'Open Sans light';
+.entrance-title-chic {
+    font-family: 'Roboto bold';
     font-size: 1em;
+    color: $orange-chic;
 }
 
-.tarifs-plats-chic{
-    @include tarifs;
-    font-family: 'Open Sans light';
+.main-title-chic {
+    font-family: 'Roboto bold';
+    font-size: 1em;
+    color: $violet-chic;
 }
 
-.trait-menu-chic {
-    fill: blue;
+.dessert-title-chic {
+    font-family: 'Roboto bold';
+    font-size: 1em;
+    color: $orange-chic;
+}
+
+.dishes-name-chic-entrance{
+    @include dishes-names-chic;
+    color: $orange-chic;
+    
+}
+
+.dishes-name-chic-main{
+    @include dishes-names-chic;
+    color: $mauve-chic;
+}
+
+.dishes-name-chic-dessert{
+    @include dishes-names-chic;
+    color: $violet-chic;
+}
+
+.end-card-chic {
+    padding-bottom: 50px;
+}
+
+.trait-menu-chic-entrance {
+    fill: $orange-chic;
+}
+
+.trait-menu-chic-main {
+    fill: $mauve-chic;
+}
+
+.trait-menu-chic-dessert {
+    fill: $violet-chic;
 }
 
 .trait-effet-mirror {
     transform: scale(-1,1); 
 }
 
-.trait-menu-note {
-    fill: $brown;
-}
+
+

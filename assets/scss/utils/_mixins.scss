@@ -44,3 +44,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
+
+@mixin titre-chic {
+    font-family: 'helpusgiambattistaregular';
+    background: -webkit-gradient(linear, left top, left bottom, from(#d8852e), to(#905bfd));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin dishes-names-chic {
+    font-family: 'Roboto Light';
+    font-size: 1em;
+    line-height: 2em;
+}

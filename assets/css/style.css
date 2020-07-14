@@ -78,6 +78,18 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Roboto Light";
+  src: url("RobotoSlab-Light.ttf") format("ttf");
+  font-style: normal;
+  font-display: normal;
+}
+@font-face {
+  font-family: "Roboto bold";
+  src: url("RobotoSlab-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-display: normal;
+}
 .header {
   display: flex;
   justify-content: center;
@@ -165,6 +177,7 @@ a {
 
 .titre-menu-chic {
   font-family: "vidaloka_regular";
+  color: #c77412;
 }
 
 .titre-menu-delice {
@@ -296,8 +309,13 @@ a {
   box-shadow: 0 0 0.5em grey;
 }
 
+/* Background cards */
 .background-menu-enchantee {
   background: #fcdfdb;
+}
+
+.background-menu-chic {
+  background: #fff5fe;
 }
 
 /* nom du restau - titre de la carte */
@@ -328,6 +346,8 @@ a {
   grid-template-columns: 40% 20% 40%;
   padding-left: 60px;
   padding-right: 60px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .card {
@@ -345,13 +365,6 @@ a {
 
 .style-trait-menu-enchanté {
   fill: #3d1319;
-}
-
-.styles-line-chic-entrance {
-  fill: orange;
-}
-.styles-line-chic-entrance .right-line {
-  transform: scaleX(-1);
 }
 
 .titre-restau-carte {
@@ -395,7 +408,10 @@ a {
   padding-bottom: 50px;
 }
 
-/* fin de la carte */
+.trait-menu-note {
+  fill: #3d1319;
+}
+
 .icone-music-end {
   font-size: 1.5em;
   padding-right: 20px;
@@ -410,31 +426,70 @@ a {
 
 .style-titre-carte-chic {
   font-family: "helpusgiambattistaregular";
+  background: -webkit-gradient(linear, left top, left bottom, from(#d8852e), to(#905bfd));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
-.dishes-names-chic {
-  font-size: 1.2em;
-  text-align: left;
-  font-family: "Open Sans light";
+.entrance-title-chic {
+  font-family: "Roboto bold";
   font-size: 1em;
+  color: #c77412;
 }
 
-.tarifs-plats-chic {
+.main-title-chic {
+  font-family: "Roboto bold";
   font-size: 1em;
-  text-align: right;
-  font-family: "Open Sans light";
+  color: #6e4ccc;
 }
 
-.trait-menu-chic {
-  fill: blue;
+.dessert-title-chic {
+  font-family: "Roboto bold";
+  font-size: 1em;
+  color: #c77412;
+}
+
+.dishes-name-chic-entrance {
+  font-family: "Roboto Light";
+  font-size: 1em;
+  line-height: 2em;
+  color: #c77412;
+}
+
+.dishes-name-chic-main {
+  font-family: "Roboto Light";
+  font-size: 1em;
+  line-height: 2em;
+  color: #a56799;
+}
+
+.dishes-name-chic-dessert {
+  font-family: "Roboto Light";
+  font-size: 1em;
+  line-height: 2em;
+  color: #6e4ccc;
+}
+
+.end-card-chic {
+  padding-bottom: 50px;
+}
+
+.trait-menu-chic-entrance {
+  fill: #c77412;
+}
+
+.trait-menu-chic-main {
+  fill: #a56799;
+}
+
+.trait-menu-chic-dessert {
+  fill: #6e4ccc;
 }
 
 .trait-effet-mirror {
   transform: scale(-1, 1);
-}
-
-.trait-menu-note {
-  fill: #3d1319;
 }
 
 /*# sourceMappingURL=style.css.map */
