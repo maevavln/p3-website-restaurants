@@ -213,3 +213,26 @@
     font-size: 1em;
     line-height: 2em;
 }
+
+.trait-menu-palette {
+    fill: $orange-chic;
+}
+
+.degrade-palette {
+    fill: url(linearGradient.svg#degrade)
+}
+
+svg.trait-palette stop:nth-child(1) {
+    stop-color: #42973c;
+  }
+
+svg.trait-palette stop:nth-child(2) {
+stop-color: #bfff7e;
+}
+
+.style-titre-carte-palette {
+    @include degradé-vert;
+    font-family: ;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
