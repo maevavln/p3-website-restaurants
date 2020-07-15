@@ -57,8 +57,7 @@ a {
 }
 
 .style-titre-delice {
-    @include degradé-bleu;
-    font-family: 'dancing_scriptregular';
+    @include titre-delice;
 }
 
 .style-palette-gout {

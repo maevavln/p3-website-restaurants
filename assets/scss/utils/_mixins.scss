@@ -57,3 +57,16 @@
     font-size: 1em;
     line-height: 2em;
 }
+
+@mixin titre-delice {
+    font-family: 'dancing_scriptregular';
+    background: -webkit-gradient(linear, left top, left bottom, from(#0431df), to(#0887fb));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin dishes-names-delices {
+    font-family: 'caveatbold';
+    font-size: 1em;
+    line-height: 2em;
+}

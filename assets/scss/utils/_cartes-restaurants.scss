@@ -24,6 +24,10 @@
     background: #fff5fe;
 }
 
+.background-menu-delice {
+    background: #f9f9f9;
+}
+
 /* nom du restau - titre de la carte */
 
 .titre-carte{
@@ -127,6 +131,12 @@
     padding-bottom: 10px;
 }
 
+.style-titre-carte-delice {
+    @include titre-delice;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
 .entrance-title-chic {
     font-family: 'Roboto bold';
     font-size: 1em;
@@ -181,5 +191,25 @@
     transform: scale(-1,1); 
 }
 
+.trait-menu-delice-entrance {
+    fill: $bleu-electrique-delice;
+}
 
+.trait-menu-delice-main {
+    fill: $bleu-ocean-delice;
+}
 
+.trait-menu-delice-dessert {
+    fill: $bleu-clair-delice;
+}
+
+.dishes-title-delice {
+    font-family: 'caveatregular';
+    font-size: 1.6em;
+}
+
+.dishes-name-delice {
+    font-family: 'caveatregular';
+    font-size: 1em;
+    line-height: 2em;
+}

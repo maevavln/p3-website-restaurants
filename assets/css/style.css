@@ -1,8 +1,10 @@
 @charset "UTF-8";
 /**
- font-family: 'helpusgiambattistaregular'; 
- font-family: 'flow_extbold'; pour le menu de la note enchantee et les titre des plats de la carte de la note
- font-family: 'flow_extregular'; pour les plats de la carte de la note enchantee 
+ font-family: 'helpusgiambattistaregular'; - TITRE CARTE CHIC 
+ font-family: 'flow_extbold' et  'flow_extregular' - TITRE CARTE NOTE ENCHANTE
+ font-family: 'vidaloka_regular' - TITRE CARTE CHIC
+ font-family: 'kaushan_scriptregular'; - TITRE CARTE PALETTE
+ font-family: 'caveatbold' - MENU DELICE & PALETTE
  */
 @font-face {
   font-family: "helpusgiambattistaregular";
@@ -157,10 +159,10 @@ a {
 }
 
 .style-titre-delice {
+  font-family: "dancing_scriptregular";
   background: -webkit-gradient(linear, left top, left bottom, from(#0431df), to(#0887fb));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "dancing_scriptregular";
 }
 
 .style-palette-gout {
@@ -318,6 +320,10 @@ a {
   background: #fff5fe;
 }
 
+.background-menu-delice {
+  background: #f9f9f9;
+}
+
 /* nom du restau - titre de la carte */
 .titre-carte {
   font-size: 1.5em;
@@ -433,6 +439,15 @@ a {
   padding-bottom: 10px;
 }
 
+.style-titre-carte-delice {
+  font-family: "dancing_scriptregular";
+  background: -webkit-gradient(linear, left top, left bottom, from(#0431df), to(#0887fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
 .entrance-title-chic {
   font-family: "Roboto bold";
   font-size: 1em;
@@ -490,6 +505,29 @@ a {
 
 .trait-effet-mirror {
   transform: scale(-1, 1);
+}
+
+.trait-menu-delice-entrance {
+  fill: #0228dd;
+}
+
+.trait-menu-delice-main {
+  fill: #0670f3;
+}
+
+.trait-menu-delice-dessert {
+  fill: #229df9;
+}
+
+.dishes-title-delice {
+  font-family: "caveatregular";
+  font-size: 1.6em;
+}
+
+.dishes-name-delice {
+  font-family: "caveatregular";
+  font-size: 1em;
+  line-height: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
