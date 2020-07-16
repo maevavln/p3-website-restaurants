@@ -566,4 +566,43 @@ svg.trait-palette stop:nth-child(2) {
   line-height: 2em;
 }
 
+.mentions-legales {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.titre-ml {
+  padding-top: 20px;
+}
+
+.date-ml {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 40px;
+}
+
+.intro-ml {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: justify;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.titre-article-ml {
+  font-size: 1.2em;
+}
+
+.text-mentions-legales {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
