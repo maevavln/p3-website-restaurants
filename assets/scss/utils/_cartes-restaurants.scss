@@ -210,7 +210,7 @@
 
 .dishes-name-delice {
     font-family: 'caveatregular';
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 2em;
 }
 
@@ -232,7 +232,18 @@ stop-color: #bfff7e;
 
 .style-titre-carte-palette {
     @include degradé-vert;
-    font-family: ;
+    font-family: 'kaushan_scriptregular';
     padding-top: 30px;
     padding-bottom: 10px;
+}
+
+.dishes-title-palette {
+    font-family: 'caveatregular';
+    font-size: 1.6em;
+}
+
+.dishes-name-palette {
+    font-family: 'caveatregular';
+    font-size: 1.2em;
+    line-height: 2em;
 }
