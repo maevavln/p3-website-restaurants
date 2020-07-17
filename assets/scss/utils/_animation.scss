@@ -1,0 +1,23 @@
+.zoom-text {
+    @include flexMid; 
+    flex-direction: column;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.zoom-text:hover {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* Opacité */
+.opacity {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.opacity:hover {
+	opacity: .5;
+}

@@ -209,40 +209,16 @@ a {
   margin: 40px;
 }
 .container .menu-note-enchantee {
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform 600ms;
   background: #fcdfdb;
 }
-.container .menu-note-enchantee:hover {
-  transform: scale(1.15);
-}
 .container .menu-chic-francaise {
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform 600ms;
   background: #fff5fe;
 }
-.container .menu-chic-francaise:hover {
-  transform: scale(1.15);
-}
 .container .menu-delice-papilles {
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform 600ms;
   background: #f9f9f9;
 }
-.container .menu-delice-papilles:hover {
-  transform: scale(1.15);
-}
 .container .menu-palette-gout {
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform 600ms;
   background: #fdfffd;
-}
-.container .menu-palette-gout:hover {
-  transform: scale(1.15);
 }
 
 .prochainement-container {
@@ -603,6 +579,33 @@ svg.trait-palette stop:nth-child(2) {
   font-size: 1em;
   text-align: justify;
   padding-bottom: 20px;
+}
+
+.zoom-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.zoom-text:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* Opacité */
+.opacity {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.opacity:hover {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
