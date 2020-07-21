@@ -129,6 +129,7 @@ h2 {
 
 h3 {
   font-size: 2em;
+  text-align: center;
 }
 
 h4 {
@@ -137,6 +138,15 @@ h4 {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .icone-music {
@@ -219,34 +229,6 @@ a {
 }
 .container .menu-palette-gout {
   background: #fdfffd;
-}
-
-.prochainement-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
-}
-.prochainement-container .button-styled {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  margin: 40px;
-  width: auto;
-  border: 0;
-  line-height: 1;
-  padding: 10px 20px;
-  font-size: 1.6em;
-  text-align: center;
-  color: #fdcb46;
-  text-shadow: 0.05px 0.05px 0.05px #000;
-  border-radius: 10px;
-  background-color: #579c87;
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
-}
-.prochainement-container .button-styled .styled:hover {
-  background-color: #fdcb46;
 }
 
 .footer {
@@ -606,6 +588,64 @@ svg.trait-palette stop:nth-child(2) {
 
 .opacity:hover {
   opacity: 0.5;
+}
+
+.prochainement-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.prochainement-container .button-styled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px;
+  width: auto;
+  border: 0;
+  line-height: 1;
+  padding: 10px 20px;
+  font-size: 1.6em;
+  text-align: center;
+  color: #fdcb46;
+  text-shadow: 0.05px 0.05px 0.05px #000;
+  border-radius: 10px;
+  background-color: #579c87;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+}
+.prochainement-container .prochainement:hover {
+  display: none;
+}
+
+.loading span {
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  background: #fdcb46;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: jumpingDots;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.loading span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.loading span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes jumpingDots {
+  20% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

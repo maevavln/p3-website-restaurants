@@ -28,6 +28,7 @@ h2 {
 
 h3 {
     font-size: 2em;
+    text-align: center;
 }
 
 h4 {
@@ -37,6 +38,15 @@ h4 {
 a {
     text-decoration: none;
 }
+
+a:hover{
+    text-decoration: none;
+    }
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    }
 
 /// contenu general
 
@@ -119,32 +129,3 @@ a {
 
 }
 
-/// button
-
-
-.prochainement-container{
-    @include flexMid;
-    margin-bottom: 100px;
-
-    .button-styled {
-        @include flexMid;
-        justify-content: space-around;
-        margin: 40px;
-        width: auto;
-        border: 0;
-        line-height: 1;
-        padding: 10px 20px;
-        font-size: 1.6em;
-        text-align: center;
-        color: $yellow;
-        text-shadow: 0.05px 0.05px 0.05px #000;
-        border-radius: 10px;
-        background-color: $green;
-        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6);
-            
-        .styled:hover {
-            background-color: $yellow;
-        }
-            
-    }
-}
