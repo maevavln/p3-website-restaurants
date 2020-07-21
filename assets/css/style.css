@@ -636,10 +636,6 @@ svg.trait-palette stop:nth-child(2) {
   transition: width 600ms ease;
 }
 
-.titre-menu-enchante:hover:after {
-  width: 100%;
-}
-
 .prochainement-container {
   display: flex;
   justify-content: center;
@@ -664,8 +660,14 @@ svg.trait-palette stop:nth-child(2) {
   background-color: #579c87;
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
 }
-.prochainement-container .prochainement:hover {
+.prochainement-container .dot {
   display: none;
+}
+.prochainement-container .button-styled:hover .prochainement {
+  display: none;
+}
+.prochainement-container .button-styled:hover .dot {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,30 +1,41 @@
 /// button
 
-
-.prochainement-container{
-    @include flexMid;
+.prochainement-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 100px;
-
+  
     .button-styled {
-        @include flexMid;
-        justify-content: space-around;
-        margin: 40px;
-        width: auto;
-        border: 0;
-        line-height: 1;
-        padding: 10px 20px;
-        font-size: 1.6em;
-        text-align: center;
-        color: $yellow;
-        text-shadow: 0.05px 0.05px 0.05px #000;
-        border-radius: 10px;
-        background-color: $green;
-        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6);
-            
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-around;
+      margin: 40px;
+      width: auto;
+      border: 0;
+      line-height: 1;
+      padding: 10px 20px;
+      font-size: 1.6em;
+      text-align: center;
+      color: #fdcb46;
+      text-shadow: 0.05px 0.05px 0.05px #000;
+      border-radius: 10px;
+      background-color: #579c87;
+      box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
     }
-
-    .prochainement:hover {
+  
+    .dot {
+      display: none;
+    }
+  
+    .button-styled:hover {
+      .prochainement {
         display: none;
+      }
+  
+      .dot {
+        display: block;
+      }
     }
-}
-
+  }
