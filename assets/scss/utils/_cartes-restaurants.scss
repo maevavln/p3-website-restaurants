@@ -102,6 +102,34 @@
     font-family: 'flow_extbold';
 }
 
+.titre-plats-enchante{
+    font-family: 'flow_extbold';
+    color: $brown;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 2px;
+        background-color: $brown;
+        transition: transform 250ms;
+    }
+    
+    &:hover {
+        
+        &::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        
+    }
+    
+}
+
 .dishes-names-note-enchantee{
     @include dishes;
     font-family: 'caveatregular';
@@ -133,6 +161,7 @@
 
 .style-titre-carte-delice {
     @include titre-delice;
+    font-size: 4em;
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -141,18 +170,84 @@
     font-family: 'Roboto bold';
     font-size: 1em;
     color: $orange-chic;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 2px;
+        background-color: $orange-chic;
+        transition: transform 250ms;
+    }
+    
+    &:hover {
+        
+        &::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        
+    }
 }
 
 .main-title-chic {
     font-family: 'Roboto bold';
     font-size: 1em;
-    color: $violet-chic;
+    color: $mauve-chic;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 2px;
+        background-color: $mauve-chic;
+        transition: transform 250ms;
+    }
+    
+    &:hover {
+        
+        &::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        
+    }
 }
 
 .dessert-title-chic {
     font-family: 'Roboto bold';
     font-size: 1em;
-    color: $orange-chic;
+    color: $violet-chic;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 2px;
+        background-color: $violet-chic;
+        transition: transform 250ms;
+    }
+    
+    &:hover {
+        
+        &::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        
+    }
 }
 
 .dishes-name-chic-entrance{
@@ -206,6 +301,28 @@
 .dishes-title-delice {
     font-family: 'caveatregular';
     font-size: 1.6em;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: transform 250ms;
+    }
+    
+    &:hover {
+        
+        &::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        
+    }
 }
 
 .dishes-name-delice {
@@ -240,6 +357,29 @@ stop-color: #bfff7e;
 .dishes-title-palette {
     font-family: 'caveatregular';
     font-size: 1.6em;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: transform 250ms;
+    }
+    
+    &:hover {
+        
+        &::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        
+    }
+    
 }
 
 .dishes-name-palette {

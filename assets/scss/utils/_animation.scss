@@ -55,22 +55,3 @@ animation-delay: 0.8s;
 }
 
 //soulignement menu
-
-.titre-menu-enchante {
-	position: relative;
-	text-decoration: none;
-	padding: 2px 0;
-  }
-
-  .titre-menu-enchante:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 0;
-	height: 2px;
-	background: $brown;
-	transition: width 600ms ease;
-  }
-   
-  
