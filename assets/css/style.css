@@ -279,6 +279,10 @@ a:visited {
   background: #f9f9f9;
 }
 
+.background-menu-palette {
+  background: #fdfffd;
+}
+
 /* nom du restau - titre de la carte */
 .titre-carte {
   font-size: 1.5em;
@@ -760,6 +764,11 @@ svg.trait-palette stop:nth-child(2) {
   .container-details-menu .details-menu {
     width: 80%;
   }
+
+  /*le Délice des papilles*/
+  .style-titre-carte-delice {
+    font-size: 2em;
+  }
 }
 @media (max-width: 768px) {
   /* General : HP */
@@ -816,6 +825,46 @@ svg.trait-palette stop:nth-child(2) {
 
   .end-note-enchante {
     margin: 20px;
+  }
+
+  .grid-tittle {
+    grid-template-columns: 30% 40% 30%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .grid-menu-dessert {
+    grid-template-columns: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* La palette des goûts */
+  .dishes-name-palette {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .style-titre-carte-palette {
+    padding-top: 20px;
+  }
+
+  /*carte chic a la française*/
+  .style-titre-carte-chic {
+    font-size: 1em;
+    padding-top: 20px;
+  }
+
+  /*le Délice des papilles*/
+  .dishes-title-delice {
+    font-size: 1.2em;
+  }
+
+  .dishes-name-delice {
+    font-size: 1em;
+    line-height: 1.5em;
   }
 }
 @media (max-width: 500px) {
@@ -900,8 +949,8 @@ svg.trait-palette stop:nth-child(2) {
 
   .grid-tittle {
     grid-template-columns: 30% 40% 30%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
   }
@@ -921,6 +970,30 @@ svg.trait-palette stop:nth-child(2) {
     padding-right: 15px;
   }
   .footer .style-text-footer {
+    font-size: 0.8em;
+  }
+
+  /*La Palette des gouts*/
+  .dishes-name-palette {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-right: 20px;
+  }
+
+  .dishes-title-palette {
+    font-size: 1.2em;
+  }
+
+  /*Le Chic a La française*/
+  .dishes-name-chic-entrance {
+    font-size: 0.8em;
+  }
+
+  .dishes-name-chic-main {
+    font-size: 0.8em;
+  }
+
+  .dishes-name-chic-dessert {
     font-size: 0.8em;
   }
 }
@@ -961,6 +1034,17 @@ svg.trait-palette stop:nth-child(2) {
   }
   .container-details-menu .details-menu {
     width: 80%;
+  }
+
+  /*Chic a la Francaise*/
+  .dessert-title-chic {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  /*le Délice des papilles*/
+  .style-titre-carte-delice {
+    font-size: 1.5em;
   }
 }
 

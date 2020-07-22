@@ -9,6 +9,11 @@
             width: 80%;
         }
     }
+
+    /*le Délice des papilles*/
+    .style-titre-carte-delice {
+        font-size: 2em;
+    }
     
 }
 
@@ -72,6 +77,46 @@
 
     .end-note-enchante {
         margin: 20px;
+    }
+
+    .grid-tittle {
+        grid-template-columns: 30% 40% 30%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .grid-menu-dessert {
+        grid-template-columns: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* La palette des goûts */
+    .dishes-name-palette {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .style-titre-carte-palette {
+        padding-top: 20px;
+    }
+
+    /*carte chic a la française*/
+    .style-titre-carte-chic {
+        font-size: 1em;
+        padding-top: 20px;
+    }
+
+    /*le Délice des papilles*/
+    .dishes-title-delice {
+        font-size: 1.2em;
+    }
+
+    .dishes-name-delice {
+        font-size: 1em;
+        line-height: 1.5em;
     }
 
 }
@@ -166,8 +211,8 @@
 
     .grid-tittle {
         grid-template-columns: 30% 40% 30%;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 10px;
         padding-top: 10px;
     }
@@ -191,6 +236,30 @@
             font-size: 0.8em;
         }
     
+    }
+
+    /*La Palette des gouts*/
+    .dishes-name-palette {
+        font-size: 1em;
+        line-height: 1.5em;
+        padding-right: 20px;
+    }
+
+    .dishes-title-palette {
+        font-size: 1.2em;
+    }
+
+    /*Le Chic a La française*/
+    .dishes-name-chic-entrance{
+        font-size: 0.8em;
+    }
+    
+    .dishes-name-chic-main{
+        font-size: 0.8em;
+    }
+    
+    .dishes-name-chic-dessert{
+        font-size: 0.8em;
     }
 
 }
@@ -242,6 +311,17 @@
         .details-menu {
             width: 80%;
         }
+    }
+
+    /*Chic a la Francaise*/  
+    .dessert-title-chic {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    /*le Délice des papilles*/
+    .style-titre-carte-delice {
+        font-size: 1.5em;
     }
            
 }
