@@ -1,0 +1,247 @@
+@media (max-width: 1024px) {  
+
+        /* La Note enchantée */
+
+    .container-details-menu{
+        margin-bottom: 80px;
+    
+        .details-menu {
+            width: 80%;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {  
+
+    /* General : HP */
+
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        }
+    
+    h3 {
+        font-size: 1.1em;
+    }
+    
+    h4 {
+        font-size: 0.8em;
+    }
+    
+    .header {
+        height: 100px;
+    }
+
+    .container {
+
+        .menu{
+            width: 40%;
+            height: 400px;
+            margin: 30px;
+        }
+
+    }
+
+    /* La Note enchantée */
+    .titre-restau-carte {
+        font-size: 1.3em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .titre-carte {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .grid-menu {
+        @include grid-card;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .dishes-names-note-enchantee{
+        font-size: 1em;
+        text-align: left;
+        font-family: 'caveatregular';
+    }
+
+    .end-note-enchante {
+        margin: 20px;
+    }
+
+}
+
+
+@media (max-width: 500px) {  
+
+    /* General : HP */    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+        }
+    
+    h3 {
+        font-size: 1em;
+    }
+    
+    h4 {
+        font-size: 0.8em;
+    }
+    
+    .header {
+        height: 80px;
+    }
+
+    .container {
+
+        .menu{
+            width: 60%;
+            height: 300px;
+            margin: 20px;
+        }
+
+    }
+
+    .prochainement-container {
+        margin-bottom: 80px;
+      
+        .button-styled {
+          margin: 20px;
+          line-height: 1;
+          padding: 8px 15px;
+          font-size: 0.8em;
+        }
+
+    }
+
+    /* La Note enchantée */
+    .titre-restau-carte {
+        font-size: 1em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .titre-carte {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .dishes-names-note-enchantee{
+        font-size: 0.8em;
+        text-align: left;
+        font-family: 'caveatregular';
+        padding-right: 10px;
+    }
+
+    .grid-menu {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tarifs-plats-note-enchantee{
+        font-size: 0.8em;
+    }
+
+    .icone-music-end{
+        font-size: 1em;
+        padding-right: 20px;
+    }
+
+    .icone-titre{
+        font-size: 1.2em;
+        padding-top: 20px;
+    }
+
+    .end-note-enchante {
+        margin: 20px;
+    }
+
+    .grid-tittle {
+        grid-template-columns: 30% 40% 30%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .grid-menu-dessert {
+        grid-template-columns: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer {
+        height: 40px;
+    
+        .footer-text {
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        .style-text-footer {
+            font-size: 0.8em;
+        }
+    
+    }
+
+}
+
+@media (max-width: 320px) {  
+
+    /* General : HP */    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1em;
+        }
+    
+    h3 {
+        font-size: 0.8em;
+    }
+    
+    h4 {
+        font-size: 0.7em;
+    }
+    
+    .header {
+        height: 80px;
+    }
+
+    .container {
+
+        .menu{
+            height: 200px;
+            margin: 20px;
+        }
+
+    }
+
+    .prochainement-container {
+        
+        .button-styled {
+            margin: 10px;
+        }
+
+    }
+
+    /* La Note enchantée */
+    .container-details-menu{
+        margin-bottom: 60px;
+    
+        .details-menu {
+            width: 80%;
+        }
+    }
+           
+}
