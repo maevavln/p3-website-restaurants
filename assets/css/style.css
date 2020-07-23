@@ -84,13 +84,13 @@
   font-family: "Roboto Light";
   src: url("RobotoSlab-Light.ttf") format("ttf");
   font-style: normal;
-  font-display: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Roboto bold";
   src: url("RobotoSlab-Bold.ttf") format("ttf");
   font-style: normal;
-  font-display: normal;
+  font-display: swap;
 }
 .header {
   display: flex;
@@ -204,7 +204,6 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: space-around;
 }
 .container .menu {
   display: flex;
@@ -246,7 +245,6 @@ a:visited {
   padding-right: 20px;
 }
 .footer .style-text-footer {
-  font-style: bold;
   color: #fdcb46;
   font-size: 1em;
 }
@@ -328,7 +326,7 @@ a:visited {
   padding-right: 60px;
 }
 
-.style-trait-menu-enchanté {
+.style-trait-menu-enchante {
   fill: #3d1319;
 }
 
