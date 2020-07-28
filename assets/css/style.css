@@ -101,6 +101,10 @@
   background: #579c87;
 }
 
+.logo-oh-my-food {
+  color: #fdcb46;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -695,10 +699,10 @@ svg.trait-palette stop:nth-child(2) {
   height: 15px;
   margin: 0 2px;
   background: #fdcb46;
-  border-radius: 50%;
+  border-radius: 60%;
   display: inline-block;
   animation-name: jumpingDots;
-  animation-duration: 2.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -716,7 +720,7 @@ svg.trait-palette stop:nth-child(2) {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
 .prochainement-container {
@@ -725,19 +729,13 @@ svg.trait-palette stop:nth-child(2) {
   align-items: center;
   margin-bottom: 100px;
 }
-.prochainement-container a:hover {
-  text-decoration: none;
-}
-.prochainement-container a:visited {
-  text-decoration: none;
-}
 .prochainement-container .button-styled {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   margin: 40px;
-  width: auto;
+  width: 20%;
   border: 0;
   line-height: 1;
   padding: 10px 20px;
@@ -747,7 +745,6 @@ svg.trait-palette stop:nth-child(2) {
   text-shadow: 0.05px 0.05px 0.05px #000;
   border-radius: 10px;
   background-color: #579c87;
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
 }
 .prochainement-container .dot {
   display: none;
@@ -799,6 +796,11 @@ svg.trait-palette stop:nth-child(2) {
     width: 40%;
     height: 400px;
     margin: 30px;
+  }
+
+  /*button*/
+  .prochainement-container .button-styled {
+    width: 30%;
   }
 
   /* La Note enchantée */
