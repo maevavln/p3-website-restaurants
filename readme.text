@@ -1,7 +1,2 @@
-sass --watch assets/scss/style.scss assets/css/style.css
 
-.trait-menu-note {
-    fill: blue;
-    filter: color(red);
-    transform: scale(-1,1); 
-}
+Git hub Page : https://maevavln.github.io/p3-website-restaurants
