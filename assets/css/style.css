@@ -144,7 +144,6 @@ a:hover {
 
 a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 .icone-music {
@@ -725,6 +724,12 @@ svg.trait-palette stop:nth-child(2) {
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+}
+.prochainement-container a:hover {
+  text-decoration: none;
+}
+.prochainement-container a:visited {
+  text-decoration: none;
 }
 .prochainement-container .button-styled {
   display: flex;
