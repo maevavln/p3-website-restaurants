@@ -37,6 +37,7 @@ h4 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover{
@@ -59,6 +60,15 @@ a:visited {
 .style-titre-enchantee {
     font-family: 'devonshireregular';
     color: $brown;
+
+    :hover {
+        color: $brown;
+     }
+
+     :visited {
+        color: $brown;
+     }
+
 }
 
 .style-titre-chic {
@@ -77,21 +87,54 @@ a:visited {
 .titre-menu-enchante{
     font-family: 'flow_extbold';
     color: $brown;
+
+    :hover {
+        color: $brown;
+     }
+
+     :visited {
+        color: $brown;
+     }
 }
 
 .titre-menu-chic {
     font-family: 'vidaloka_regular';
-    color: #c77412;
+    color: $orange-chic;
+
+    :hover {
+        color: $orange-chic;
+     }
+
+    :visited {
+        color: $orange-chic;
+    }
+
 }
 
 .titre-menu-delice {
     font-family: 'caveatbold';
-    color: #0887fb;
+    color: $bleu-ocean-delice;
+    
+    :hover {
+        color: $bleu-ocean-delice;
+     }
+
+    :visited {
+        color: $bleu-ocean-delice;
+    }
 }
 
 .titre-menu-palette {
     font-family: 'caveatbold';
     color: #bfff7e;
+
+    :hover {
+        color: #bfff7e;
+     }
+
+    :visited {
+        color: #bfff7e;
+    }
 }
 
 .container {

@@ -11,16 +11,41 @@
     .footer-text {
         display: flex;
         justify-content: space-between;
+        color: $yellow;
         width: 100%;
         padding-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .style-text-footer {
-        color: $yellow;
-        font-size: 1em;
-    }
-
 }
+
+.style-text-footer {
+    color: $yellow;
+    font-size: 1em;
+
+    :hover {
+        color: $yellow;
+     }
+
+    :visited {
+    color: $yellow;
+    }
+}
+  
+.style-text-footer:hover {
+    animation: .8s shake infinite alternate;
+}
+  
+@keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+}
+  
+
+
    

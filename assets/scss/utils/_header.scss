@@ -9,4 +9,12 @@
 
  .logo-oh-my-food {
      color: $yellow;
+
+     :hover {
+        color: $yellow;
+     }
+
+     :visited {
+        color: $yellow;
+     }
  }

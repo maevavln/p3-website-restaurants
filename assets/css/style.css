@@ -104,6 +104,12 @@
 .logo-oh-my-food {
   color: #fdcb46;
 }
+.logo-oh-my-food :hover {
+  color: #fdcb46;
+}
+.logo-oh-my-food :visited {
+  color: #fdcb46;
+}
 
 * {
   padding: 0;
@@ -140,6 +146,7 @@ h4 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -159,6 +166,12 @@ a:visited {
 
 .style-titre-enchantee {
   font-family: "devonshireregular";
+  color: #3d1319;
+}
+.style-titre-enchantee :hover {
+  color: #3d1319;
+}
+.style-titre-enchantee :visited {
   color: #3d1319;
 }
 
@@ -187,19 +200,43 @@ a:visited {
   font-family: "flow_extbold";
   color: #3d1319;
 }
+.titre-menu-enchante :hover {
+  color: #3d1319;
+}
+.titre-menu-enchante :visited {
+  color: #3d1319;
+}
 
 .titre-menu-chic {
   font-family: "vidaloka_regular";
   color: #c77412;
 }
+.titre-menu-chic :hover {
+  color: #c77412;
+}
+.titre-menu-chic :visited {
+  color: #c77412;
+}
 
 .titre-menu-delice {
   font-family: "caveatbold";
-  color: #0887fb;
+  color: #0670f3;
+}
+.titre-menu-delice :hover {
+  color: #0670f3;
+}
+.titre-menu-delice :visited {
+  color: #0670f3;
 }
 
 .titre-menu-palette {
   font-family: "caveatbold";
+  color: #bfff7e;
+}
+.titre-menu-palette :hover {
+  color: #bfff7e;
+}
+.titre-menu-palette :visited {
   color: #bfff7e;
 }
 
@@ -242,16 +279,48 @@ a:visited {
 .footer .footer-text {
   display: flex;
   justify-content: space-between;
+  color: #fdcb46;
   width: 100%;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.footer .style-text-footer {
+
+.style-text-footer {
   color: #fdcb46;
   font-size: 1em;
 }
+.style-text-footer :hover {
+  color: #fdcb46;
+}
+.style-text-footer :visited {
+  color: #fdcb46;
+}
 
+.style-text-footer:hover {
+  animation: 0.8s shake infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: skewX(-15deg);
+  }
+  5% {
+    transform: skewX(15deg);
+  }
+  10% {
+    transform: skewX(-15deg);
+  }
+  15% {
+    transform: skewX(15deg);
+  }
+  20% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
 /* Page 1 : general */
 .container-details-menu {
   display: flex;
