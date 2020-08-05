@@ -111,22 +111,14 @@
     position: relative;
 
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%) scaleX(0);
-        transform-origin: 50% 50%;
-        width: 100%;
-        height: 2px;
+        @include animation-titre-plat;
         background-color: $brown;
-        transition: transform 250ms;
     }
     
     &:hover {
         
         &::after {
-            transform: translateX(-50%) scaleX(1);
+            @include hover-titre-plat;
         }
         
     }
@@ -176,22 +168,14 @@
     position: relative;
 
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -5px;
-        transform: translateX(-50%) scaleX(0);
-        transform-origin: 50% 50%;
-        width: 100%;
-        height: 2px;
+        @include animation-titre-plat;
         background-color: $orange-chic;
-        transition: transform 250ms;
     }
     
     &:hover {
         
         &::after {
-            transform: translateX(-50%) scaleX(1);
+            @include hover-titre-plat;
         }
         
     }
@@ -204,22 +188,14 @@
     position: relative;
 
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -5px;
-        transform: translateX(-50%) scaleX(0);
-        transform-origin: 50% 50%;
-        width: 100%;
-        height: 2px;
+       @include animation-titre-plat;
         background-color: $mauve-chic;
-        transition: transform 250ms;
     }
     
     &:hover {
         
         &::after {
-            transform: translateX(-50%) scaleX(1);
+            @include hover-titre-plat;
         }
         
     }
@@ -232,22 +208,14 @@
     position: relative;
 
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -5px;
-        transform: translateX(-50%) scaleX(0);
-        transform-origin: 50% 50%;
-        width: 100%;
-        height: 2px;
+        @include animation-titre-plat;
         background-color: $violet-chic;
-        transition: transform 250ms;
     }
     
     &:hover {
         
         &::after {
-            transform: translateX(-50%) scaleX(1);
+            @include hover-titre-plat;
         }
         
     }
@@ -307,22 +275,14 @@
     position: relative;
 
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -5px;
-        transform: translateX(-50%) scaleX(0);
-        transform-origin: 50% 50%;
-        width: 100%;
-        height: 2px;
+        @include animation-titre-plat;
         background-color: black;
-        transition: transform 250ms;
     }
     
     &:hover {
         
         &::after {
-            transform: translateX(-50%) scaleX(1);
+            @include hover-titre-plat;
         }
         
     }
@@ -363,22 +323,14 @@ stop-color: #bfff7e;
     position: relative;
 
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -5px;
-        transform: translateX(-50%) scaleX(0);
-        transform-origin: 50% 50%;
-        width: 100%;
-        height: 2px;
+        @include animation-titre-plat;
         background-color: black;
-        transition: transform 250ms;
     }
     
     &:hover {
         
         &::after {
-            transform: translateX(-50%) scaleX(1);
+            @include hover-titre-plat;
         }
         
     }
