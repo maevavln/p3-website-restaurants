@@ -77,10 +77,12 @@ a:visited {
 
 .style-titre-delice {
     @include titre-delice;
+    width: 100%;
 }
 
 .style-palette-gout {
     @include degradé-vert;
+    width: 100%;
     font-family: 'kaushan_scriptregular';
 }
 

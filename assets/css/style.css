@@ -187,12 +187,14 @@ a:visited {
   background: -webkit-gradient(linear, left top, left bottom, from(#0431df), to(#0887fb));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 100%;
 }
 
 .style-palette-gout {
   background: -webkit-gradient(linear, left top, left bottom, from(#42973c), to(#bfff7e));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 100%;
   font-family: "kaushan_scriptregular";
 }
 
@@ -736,6 +738,10 @@ svg.trait-palette stop:nth-child(2) {
   padding-bottom: 20px;
 }
 
+.end-page-ml {
+  margin-bottom: 100px;
+}
+
 .zoom-text {
   display: flex;
   justify-content: center;
@@ -754,6 +760,7 @@ svg.trait-palette stop:nth-child(2) {
 
 /* Opacité */
 .opacity {
+  width: 90%;
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -837,6 +844,11 @@ svg.trait-palette stop:nth-child(2) {
   /*le Délice des papilles*/
   .style-titre-carte-delice {
     font-size: 2em;
+  }
+
+  /*mentions legales*/
+  .end-page-ml {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 768px) {
