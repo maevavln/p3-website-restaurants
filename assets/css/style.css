@@ -401,6 +401,7 @@ a:visited {
 }
 
 .style-trait-menu-enchante {
+  width: 100%;
   fill: #3d1319;
 }
 
@@ -468,6 +469,7 @@ a:visited {
 }
 
 .trait-menu-note {
+  width: 100%;
   fill: #3d1319;
 }
 
@@ -597,30 +599,37 @@ a:visited {
 }
 
 .trait-menu-chic-entrance {
+  width: 100%;
   fill: #c77412;
 }
 
 .trait-menu-chic-main {
+  width: 100%;
   fill: #a56799;
 }
 
 .trait-menu-chic-dessert {
+  width: 100%;
   fill: #6e4ccc;
 }
 
 .trait-effet-mirror {
+  width: 100%;
   transform: scale(-1, 1);
 }
 
 .trait-menu-delice-entrance {
+  width: 100%;
   fill: #0228dd;
 }
 
 .trait-menu-delice-main {
+  width: 100%;
   fill: #0670f3;
 }
 
 .trait-menu-delice-dessert {
+  width: 100%;
   fill: #229df9;
 }
 
@@ -653,11 +662,16 @@ a:visited {
 }
 
 .trait-menu-palette {
+  width: 100%;
   fill: #c77412;
 }
 
 .degrade-palette {
   fill: url(linearGradient.svg#degrade);
+}
+
+.trait-palette {
+  width: 100%;
 }
 
 svg.trait-palette stop:nth-child(1) {
@@ -748,6 +762,7 @@ svg.trait-palette stop:nth-child(2) {
   margin-bottom: 100px;
 }
 
+/* Animation carte home page */
 .zoom-text {
   display: flex;
   justify-content: center;
